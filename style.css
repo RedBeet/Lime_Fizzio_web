@@ -30,3 +30,7 @@ html, body{
     transform: scaleX(-1);
     filter: FlipH;
 }
+
+#camera{
+    display: flex;
+}

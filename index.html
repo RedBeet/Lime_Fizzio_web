@@ -11,14 +11,25 @@
     <div id="header">
     </div>
     <main id="camera">
+        <div>
         <h1>Lime FiZZIO</h1>
+            <p>Connection: <span id="status" style="font-weight: bold;">N/A</span></p>
+            <p>Velocity: <span id="velocity" style="font-weight: bold;"></span></p>
+            <p>Angular Velocity: <span id="angularvel" style="font-weight: bold;"></span></p>
+            <p>Temperature: <span id="temperature" style="font-weight: bold;"></span></p>
+            <p>Humidity: <span id="humidity" style="font-weight: bold;"></span></p>
+            <p>Upside Height: <span id="upheight" style="font-weight: bold;"></span></p>
+            <p>Downside Height: <span id="downheight" style="font-weight: bold;"></span></p>
+        </div>
+        <div>
         <canvas id="camera--sensor"></canvas>
         <video id="camera--view" autoplay playsinline></video>
         <img src="//:0" alt="" id="camera--output">
-
+        </div>
     </main>
 
-
+    <script type="text/javascript" src="http://static.robotwebtools.org/roslibjs/current/roslib.min.js"></script>
     <script src="script.js"></script>
+    
 </body>
 </html>
